@@ -37,7 +37,7 @@ public class DataBaseProperties {
             Map<Object,Object> propertiesMap = new TreeMap<>();
             propertiesMap.put("MYSQL_DB_URL","jdbc:mysql://localhost:3306/msql");
             propertiesMap.put("MYSQL_DB_USERNAME", "root");
-            propertiesMap.put("MYSQL_DB_PASSWORD", "admin");
+            propertiesMap.put("MYSQL_DB_PASSWORD", "root");
             
         try {
             propertiesFile = new FileOutputStream("fileProp.properties");
