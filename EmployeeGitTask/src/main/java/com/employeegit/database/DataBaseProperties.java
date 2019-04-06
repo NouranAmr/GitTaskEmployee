@@ -32,6 +32,7 @@ import java.util.logging.Logger;
  * @author Ibrahim
  */
 public class DataBaseProperties {
+    public static void main(String[] args) {
         Properties rootProperties = new Properties();
             FileOutputStream propertiesFile = null;
             Map<Object,Object> propertiesMap = new TreeMap<>();
