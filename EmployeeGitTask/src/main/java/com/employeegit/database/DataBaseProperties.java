@@ -11,13 +11,17 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.Properties;
 import java.util.TreeMap;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+
 
 /**
  *
  * @author Ibrahim
  */
 public class DataBaseProperties {
-    Properties rootProperties = new Properties();
+        Properties rootProperties = new Properties();
             FileOutputStream propertiesFile = null;
             Map<Object,Object> propertiesMap = new TreeMap<>();
             propertiesMap.put("MYSQL_DB_URL","jdbc:mysql://localhost:3306/msql");
@@ -39,4 +43,6 @@ public class DataBaseProperties {
              } catch (IOException ex) {
                  Logger.getLogger(DataBaseProperties.class.getName()).log(Level.SEVERE, null, ex);
              }
+        }
+    }
 }
